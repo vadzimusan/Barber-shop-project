@@ -1,0 +1,134 @@
+/*Сетка для Барбершопа*/
+
+html, body {
+    min-width: 1122px;
+    min-height: 1750px;
+}
+.main-header {
+    margin-bottom: 75px;
+}
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-header-logo {
+    width: 368px;
+    height: 153px;
+
+    order: 2;
+}
+.main-navigation-wrapper {
+    border: 1px solid red;
+
+    width: 100%;
+    margin-bottom: 60px;
+
+    background-color: #000000;
+}
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+.site-navigation {
+    border: 1px solid red;
+
+    width: 620px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.user-navigation {
+    border: 1px solid red;
+
+    width: 140px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.container {
+    border: 1px solid red;
+
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.features-list {
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.features-item {
+    border: 1px solid red;
+
+    width: 300px;
+}
+.features {
+    margin-bottom: 80px;
+}
+
+.index-columns {
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+.index-columns:last-child {
+    margin-bottom: 0;
+}
+.news {
+    border: 1px solid red;
+
+    width: 380px;
+}
+.gallery {
+    border: 1px solid red;
+
+    width: 300px;
+
+}
+.contacts {
+    border: 1px solid red;
+
+    width: 380px;
+}
+.appointment {
+    border: 1px solid red;
+
+    width: 300px;
+}
+.main-footer {
+    border: 1px solid red;
+
+    margin-top: 65px;
+    padding: 60px 0;
+}
+.main-footer .container {
+    display: flex;
+}
+.footer-contacts {
+    border: 1px solid red;
+    margin: 0 80px 0 0;
+    width: 320px
+}
+.footer-social {
+    border: 1px solid red;
+    width: 145px;
+}
+.footer-copyright {
+    border: 1px solid red;
+    width: 150px;
+    margin: 0 0 0 auto;
+}
+
+
