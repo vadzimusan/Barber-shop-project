@@ -1,0 +1,94 @@
+/* Стили для товаров барбершопа*/
+.inner-page{
+    color: #000000;
+
+    background-color: #ffffff;
+    background-image: url("img/pattern-light.jpg");
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+.inner-page .main-header {
+    margin-bottom: 50px;
+
+    background-color: #000000;
+}
+.inner-page .main-header-logo {
+    outline: 1px solid red;
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+
+    order: 0;
+}
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+}
+.inner-page .user-navigation {
+    margin-left: auto;
+}
+.page-title {
+    outline: 1px solid red;
+
+    margin: 0 0 15px;
+    padding: 0;
+}
+.breadcrumbs {
+    outline: 1px solid red;
+
+    padding: 0;
+    margin: 0 0 50px;
+
+    list-style: none;
+}
+.filter {
+    outline: 1px solid red;
+
+    width: 180px;
+}
+.filter ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.catalog{
+    outline: 1px solid red;
+
+    width: 700px;
+}
+.catalog-columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+.catalog-item {
+    outline: 1px solid red;
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+.pagination-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.inner-page .main-footer {
+    margin-top: 45px;
+}
+
+fieldset {
+    border: none;
+}
