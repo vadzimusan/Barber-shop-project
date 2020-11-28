@@ -8,7 +8,7 @@
     background-position: 0 0;
 }
 .inner-page .main-header {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
     background-color: #000000;
 }
@@ -30,7 +30,7 @@
 .page-title {
     outline: 1px solid red;
 
-    margin: 0 0 15px;
+    margin: 0 0 25px;
     padding: 0;
 }
 .breadcrumbs {
@@ -76,6 +76,9 @@
     margin-bottom: 20px;
     margin-right: 20px;
 }
+.catalog-item h3 {
+    outline: 1px solid red;
+}
 .catalog-item:nth-child(3n) {
     margin-right: 0;
 }
@@ -90,5 +93,85 @@
 }
 
 fieldset {
+    padding: 0;
+    margin: 0 0 55px;
     border: none;
 }
+legend {
+    padding: 0;
+    margin: 0 0 20px;
+
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/*Стилизация общая */
+
+.breadcrumbs {
+    display: flex;
+    margin-right: 0;
+    flex-wrap: wrap;
+}
+.breadcrumbs a {
+    position: relative;
+    color: #000000;
+    margin-right: 40px;
+}
+.breadcrumbs a::after {
+    content: "";
+
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    margin-top: -4px;
+    width: 7px;
+    height: 7px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+.breadcrumbs-current {
+    color: #aba9a7;
+}
+.filter-option {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.filter-option ul {
+    padding: 0;
+    margin: 0;
+}
+.filter-option:last-child {
+    margin-bottom: 0;
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+}
+.catalog-item h3 {
+    order: 1;
+}
+.catalog-item .catalog-category {
+    text-transform: none;
+}
+.catalog-item .image-product a {
+    display: block;
+
+    height: 165px;
+}
+
+.catalog-item-price {
+    order: 2;
+}
+.catalog-item p {
+    padding: 0;
+    margin: 0;
+}
+a {
+    outline: 1px solid green;
+}
+
+
