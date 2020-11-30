@@ -13,7 +13,7 @@
     background-color: #000000;
 }
 .inner-page .main-header-logo {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     width: 111px;
     height: 24px;
     padding: 23px 20px;
@@ -28,13 +28,13 @@
     margin-left: auto;
 }
 .page-title {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 
     margin: 0 0 25px;
     padding: 0;
 }
 .breadcrumbs {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 
     padding: 0;
     margin: 0 0 50px;
@@ -42,7 +42,7 @@
     list-style: none;
 }
 .filter {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 
     width: 180px;
 }
@@ -53,7 +53,7 @@
     list-style: none;
 }
 .catalog{
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 
     width: 700px;
 }
@@ -71,14 +71,12 @@
     list-style: none;
 }
 .catalog-item {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     width: 220px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
-.catalog-item h3 {
-    outline: 1px solid red;
-}
+
 .catalog-item:nth-child(3n) {
     margin-right: 0;
 }
@@ -135,7 +133,7 @@ legend {
 }
 .filter-option {
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 .filter-option ul {
     padding: 0;
@@ -149,29 +147,131 @@ legend {
     display: flex;
     flex-direction: column;
 
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.2);
+
     background-color: #ffffff;
-}
-.catalog-item h3 {
-    order: 1;
-}
-.catalog-item .catalog-category {
-    text-transform: none;
-}
-.catalog-item .image-product a {
-    display: block;
-
-    height: 165px;
-}
-
-.catalog-item-price {
-    order: 2;
 }
 .catalog-item p {
     padding: 0;
     margin: 0;
 }
-a {
-    outline: 1px solid green;
+.catalog-item h3 {
+    margin: 0;
+    padding: 15px;
+
+    order: 1;
+}
+.catalog-item h3 span {
+    display: block;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+
+    margin: 0;
+    padding: 0;
+}
+.catalog-item .catalog-category {
+    text-transform: none;
 }
 
+.catalog-item .image-product a {
+    display: block;
 
+    max-height: 165px;
+}
+
+.catalog-item .catalog-item-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 187px;
+
+    margin:0 auto 15px;
+    text-align:  center;
+
+    order: 2;
+}
+.catalog-item .button {
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-right: 0;
+
+    padding: 13px;
+}
+.catalog-item-price b {
+    flex-grow:  1;
+
+    padding: 13px 0 13px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #e5e5e5;
+}
+
+/*Для прикола сделал Пагинацию на инлайн-блочной модели сетки.
+Впринципе подход похож на флекс только учитываются пробелы в ходе,
+ что не очень удобно т.к. margin на пагинации не 7px а за счет пробелов больше */
+
+/*.pagination-list {*/
+/*    margin-top: 25px;*/
+
+/*}*/
+/*.pagination-item {*/
+/*    display: inline-block;*/
+/*    vertical-align: top;*/
+/*    margin-right: 7px;*/
+/*    margin-bottom: 7px;*/
+
+/*    background-color: #000000;*/
+/*}*/
+
+/*.pagination-item a {*/
+/*    display: block;*/
+
+/*    width: 48px;*/
+/*    height: 48px;*/
+/*    font-size: 14px;*/
+/*    line-height: 48px;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+
+/*    background-color: #000000;*/
+/*}*/
+/*.inner-page .main-footer {*/
+/*    margin-top: 38px;*/
+/*}*/
+
+
+.pagination-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-top: 25px;
+}
+.pagination-item {
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+.pagination-item  a {
+    display: block;
+
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+    color: #ffffff;
+    text-align: center;
+
+
+    background-color: #000000;
+}
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
+}
+.inner-page .main-footer {
+    margin-top: 45px;
+}
