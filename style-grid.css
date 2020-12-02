@@ -1,8 +1,7 @@
 /*Сетка для Барбершопа*/
 
-html, body {
+ body {
     min-width: 1122px;
-    min-height: 1750px;
 }
 .main-header {
     margin-bottom: 75px;
