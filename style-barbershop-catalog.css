@@ -150,7 +150,6 @@ legend {
 }
 .filter-option {
     margin-bottom: 20px;
-    margin-left: 50px;
 }
 .filter-option ul {
     padding: 0;
@@ -291,4 +290,80 @@ legend {
 }
 .inner-page .main-footer {
     margin-top: 45px;
+}
+
+/*Стилизация чекбоксов и радиобатанов*/
+
+.filter-option {
+    position: relative;
+
+    padding-left: 35px;
+    /*outline: 1px solid red;*/
+}
+
+.filter-option label {
+    cursor: pointer;
+}
+
+
+/*Чекбоксы*/
+
+.filter-option label input[type="checkbox"] + .filter-input-checkbox {
+
+    position: absolute;
+    top: 1px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+.filter-option label input[type="checkbox"]:checked + .filter-input-checkbox::after,
+.filter-option label input[type="checkbox"]:checked + .filter-input-checkbox::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+.filter-option label input[type="checkbox"]:checked + .filter-input-checkbox::after {
+    transform: rotate(45deg);
+}
+.filter-option label input[type="checkbox"]:checked + .filter-input-checkbox::before {
+    transform: rotate(-45deg);
+}
+
+/*Радиобатаны*/
+
+.filter-option label input[type="radio"] + .filter-input-radio {
+    position: absolute;
+    top: 1px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+.filter-option label input[type="radio"]:checked + .filter-input-radio::before,
+.filter-option label input[type="radio"]:checked + .filter-input-radio::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #000000;
+
+    border-radius: 100%;
 }
